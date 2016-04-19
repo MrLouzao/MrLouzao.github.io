@@ -6,6 +6,8 @@ body {
     font-size: 0.9em;
     font-weight: 100;
     height: 100%;
+    
+    padding-top: 70px;
 }
 
 #page {
@@ -35,17 +37,26 @@ p {
 #header {
     background-color: #333;
     color: #DCDCDC;
-    min-height: 75px;
-    width: 100%;
+}
+
+#header-content {
+    width: 50%;
+    margin: 0 auto;
 }
 
 .header-option {
-    margin-top: 25px;
+    margin-top: 0;
     text-align: center;
 }
 
+.navbar {
+    min-height: 75px !important;
+    background-color: #333 !important;
+}
+
+
 .header-option a{
-    color: #DCDCDC;
+    color: #DCDCDC !important;
     border-bottom: none;
     text-decoration: none;
     font-family: Calibri;
@@ -53,13 +64,20 @@ p {
     font-weight: 100;
     letter-spacing: 2px;
     text-align: center;
-    padding: 0px 20px;
+    margin-top: 25px;
+    padding: 0 20px !important;
 }
 
 .header-option a:hover{
+    background-color: none !important;
     text-decoration: none;
-    color: dodgerblue;
+    color: dodgerblue !important;
     border-bottom: solid 1px dodgerblue;
+}
+
+#logo {
+    margin-top: 0px;
+    padding: 0;
 }
 
 #logo img{

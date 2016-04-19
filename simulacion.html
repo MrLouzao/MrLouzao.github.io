@@ -11,27 +11,36 @@
 
     <div id="page" class="container">
         
-        <div id="header" style="border: solid 1px black">
-            <div class="row">
-                <div class="col-xs-2"></div>
-                <div class="col-xs-2" id="logo" style="margin-right: 25px">
-                    <a href="/index.html"><img src="resources/img/logo2.png" alt="logo" /></a>
+        <!-- Fixed navbar -->
+        <div id="header">
+            <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                    <!-- Webpage logo -->    
+                  <a id="logo" class="navbar-brand" href="/index.html">
+                      <img src="resources/img/logo2.png" alt="logo" />
+                  </a>  
                 </div>
-                <div class="col-xs-1 header-option">
-                    <a href="index.html">INICIO</a>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="header-option"><a href="index.html">INICIO</a></li>
+                    <li class="header-option"><a href="modelado.html">MODELADO 3D</a></li>
+                    <li class="header-option"><a href="simulacion.html">SIMULACIÓN</a></li>
+                    <li class="header-option"><a href="contacto.html">CONTACTO</a></li>
+                  </ul>
                 </div>
-                <div class="col-xs-2 header-option">
-                    <a href="modelado.html">MODELADO 3D</a>
-                </div>
-                <div class="col-xs-2 header-option">
-                    <a href="simulacion.html">SIMULACIÓN</a>
-                </div>
-                <div class="col-xs-1 header-option">
-                    <a href="contacto.html">CONTACTO</a>
-                </div>
-            </div>
+                  <!--/.nav-collapse -->
+              </div>
+            </nav>
         </div>
-        <div class="black-and-white-separator"></div>
+        <div class="black-and-white-separator" style="margin-top: 5px"></div>
         <!-- End of header -->
         
         
@@ -89,6 +98,8 @@
 
     </div>
     <!-- End of body -->
+    <script type="text/javascript" src="resources/js/jquery.min.js"></script>
+    <script type="text/javascript" src="resources/js/bootstrap.min.js" ></script>
     
 </body>
 <style type="text/css">
